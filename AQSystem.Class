@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-10-31T15:41:23.735Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="SkqXpj0le4kFEhi3xGKj" version="13.8.1" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-05T08:12:50.224Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="zcutJMqOCb5eGUWLQS-g" version="13.9.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1662" dy="646" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -315,7 +315,7 @@
         <mxCell id="J3mTwbGP4TGK7rjcTthv-155" value="+ queryQuestionList(&#xa;    String keyword,&#xa;    Integer userId, &#xa;    Integer typeId, &#xa;    Integer tagId, &#xa;    Double startPrice,&#xa;    Double endPrice): List&lt;Question&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="J3mTwbGP4TGK7rjcTthv-152" vertex="1">
           <mxGeometry y="60" width="370" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="J3mTwbGP4TGK7rjcTthv-156" value="+ queryQuestionDetail(Integer questionId): List&lt;Question&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="J3mTwbGP4TGK7rjcTthv-152" vertex="1">
+        <mxCell id="J3mTwbGP4TGK7rjcTthv-156" value="+ queryQuestionDetail(Integer questionId): Question" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="J3mTwbGP4TGK7rjcTthv-152" vertex="1">
           <mxGeometry y="170" width="370" height="24" as="geometry" />
         </mxCell>
         <mxCell id="J3mTwbGP4TGK7rjcTthv-186" value="+ queryRecomendList(Integer userId): List&lt;Question&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="J3mTwbGP4TGK7rjcTthv-152" vertex="1">
