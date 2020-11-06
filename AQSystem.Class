@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-06T00:13:30.198Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36" etag="eWsVSfD-F72ulFsNY1MM" version="13.8.8" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-06T00:19:09.748Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36" etag="QdCVjMJQn4UEiAzWeLC4" version="13.9.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1662" dy="806" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
@@ -369,10 +369,10 @@
         <mxCell id="J3mTwbGP4TGK7rjcTthv-160" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="J3mTwbGP4TGK7rjcTthv-157" vertex="1">
           <mxGeometry y="52" width="600" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="J3mTwbGP4TGK7rjcTthv-161" value="+ addQuestion(QuestinInput questinInput): Questin " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="J3mTwbGP4TGK7rjcTthv-157" vertex="1">
+        <mxCell id="J3mTwbGP4TGK7rjcTthv-161" value="+ addQuestion(Question question): Question " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="J3mTwbGP4TGK7rjcTthv-157" vertex="1">
           <mxGeometry y="60" width="600" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="J3mTwbGP4TGK7rjcTthv-234" value="+ updateQuestion(String title, String content,Double price): Quesion" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="J3mTwbGP4TGK7rjcTthv-157" vertex="1">
+        <mxCell id="J3mTwbGP4TGK7rjcTthv-234" value="+ updateQuestion(String title, String content,Double price): Question" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="J3mTwbGP4TGK7rjcTthv-157" vertex="1">
           <mxGeometry y="86" width="600" height="26" as="geometry" />
         </mxCell>
         <mxCell id="J3mTwbGP4TGK7rjcTthv-236" value="+ deleteQuestion(Integer questionId): Integer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="J3mTwbGP4TGK7rjcTthv-157" vertex="1">
