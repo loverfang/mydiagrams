@@ -1,1 +1,298 @@
-<mxfile host="app.diagrams.net" modified="2021-01-11T10:48:43.792Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" version="14.1.8" etag="jZ1duzBi9yYS9GF55O98" type="github"><diagram id="6pjWzrl_e1uWEEvXKIHh">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-01-20T05:09:29.933Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" etag="CgNfy5FkIzyV3_a67hm3" version="14.2.4" type="github">
+  <diagram id="6pjWzrl_e1uWEEvXKIHh" name="Page-1">
+    <mxGraphModel dx="2700" dy="1612" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sjk728Yho5nZLWCdos-K-6" value="«interface»&#xa;AuthenticationManager" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="76.25" y="440" width="350" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-6">
+          <mxGeometry y="40" width="350" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-9" value="+ authenticate(Authentication authentication)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-6">
+          <mxGeometry y="48" width="350" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-14" value="说明：为认证管理接口类，其定义了认证方法authenticate()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-6">
+          <mxGeometry y="74" width="350" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-10" value="ProviderManager" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="10" y="610" width="482.5" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-11" value="+ providers: List&lt;AuthenticationProvider&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-10">
+          <mxGeometry y="26" width="482.5" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-17" value="+ eventPublisher: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-10">
+          <mxGeometry y="52" width="482.5" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-18" value="+ messages: MessageSourceAccessor" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-10">
+          <mxGeometry y="78" width="482.5" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-10">
+          <mxGeometry y="104" width="482.5" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-30" value="+ authenticate(Authentication authentication):Authentication" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-10">
+          <mxGeometry y="112" width="482.5" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-13" value="说明：ProviderManager 为验证管理类，实现了接口AuthenticationManager 接口，&#xa;并在认证方法authenticate() 中将身份认证委托给具有认证资格的AuthenticationProvider &#xa;进行身份认证。" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-10">
+          <mxGeometry y="140" width="482.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-15" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;fontColor=#000000;entryX=0.493;entryY=1.038;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="sjk728Yho5nZLWCdos-K-10" target="sjk728Yho5nZLWCdos-K-14">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="330" y="730" as="sourcePoint" />
+            <mxPoint x="490" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-20" value="«interface»&#xa;AuthenticationProvider" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="770" y="711" width="350" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-21" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-20">
+          <mxGeometry y="40" width="350" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-22" value="+ authenticate(Authentication authentication)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-20">
+          <mxGeometry y="48" width="350" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-23" value="说明：接口认证类，定义了认证方法authenticate() 。" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-20">
+          <mxGeometry y="74" width="350" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-24" value="AuthenticationAdapter" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1440" y="594" width="530" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-25" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-24">
+          <mxGeometry y="26" width="530" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-26" value="+ Authentication authenticate(QiuSuoAuthenticationToken authentication)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-24">
+          <mxGeometry y="34" width="530" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-75" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;fontColor=#FF3333;" vertex="1" parent="sjk728Yho5nZLWCdos-K-24">
+          <mxGeometry y="60" width="530" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-27" value="说明：为认证管理接口类，其实现了认证方法authenticate()，在这个方法中根据不同来源的用户&#xa;选择不同的认证服务提供类，进行适配处理，返回相应的Authentication" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-24">
+          <mxGeometry y="68" width="530" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-33" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="492.5" y="757" width="277.5" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-34" value="通过ProviderManager构造函数设置任意多个AuthenticationPrivider的实现类" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="510" y="717" width="250" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-35" value="AbstractUserDetailsAuthenticationProvider" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="750" y="901" width="390" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-36" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-35">
+          <mxGeometry y="26" width="390" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-37" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-35">
+          <mxGeometry y="52" width="390" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-38" value="+ authenticate(): Authentication //实现接口方法" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-35">
+          <mxGeometry y="60" width="390" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-39" value="+ retrieveUser() //用于查询数据库用户信息" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-35">
+          <mxGeometry y="86" width="390" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-40" value="+  additionalAuthenticationChecks() //用作额外的身份验证检查" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-35">
+          <mxGeometry y="112" width="390" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-43" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;fontColor=#FF3333;" vertex="1" parent="sjk728Yho5nZLWCdos-K-35">
+          <mxGeometry y="138" width="390" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-42" value="说明：是一个认证的抽象方法，实现了特定的几个方法，具体的认证&#xa;方法可以直接继承它进行扩展。" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-35">
+          <mxGeometry y="146" width="390" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-41" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;fontColor=#FF3333;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="sjk728Yho5nZLWCdos-K-35" target="sjk728Yho5nZLWCdos-K-23">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="590" y="881" as="sourcePoint" />
+            <mxPoint x="943" y="851" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-44" value="DaoAuthenticationProvider" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="750" y="1201" width="390" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-45" value="+ USER_NOT_FOUND_PASSWORD:string&#xa;//该变量是与PasswordEncoder一同使用的，当Security未找到用户时，&#xa;用于PasswordEncoder.matches()执行的明文密码，以防止恶意用户&#xa;确定用户名是否有效的旁路攻击的可能性。" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-44">
+          <mxGeometry y="26" width="390" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-57" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;fontColor=#FF3333;" vertex="1" parent="sjk728Yho5nZLWCdos-K-44">
+          <mxGeometry y="90" width="390" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-54" value="+ passwordEncoder:PasswordEncoder&#xa;//密码编码器，Security中的主要作用是用于将明文密码转换成密文，&#xa;它采用SHA-256算法，迭代1024次，使用一个密钥(site-wide secret)&#xa;以及8位随机盐对原密码进行加密。" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-44">
+          <mxGeometry y="98" width="390" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-58" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;fontColor=#FF3333;" vertex="1" parent="sjk728Yho5nZLWCdos-K-44">
+          <mxGeometry y="170" width="390" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-55" value="+ userNotFoundEncodedPassword:string&#xa;//同上方USER_NOT_FOUND_PASSWORD一致，只不过Security将&#xa;其修饰为volatile的，确保了该变量不会因为编译器的优化而被省略。" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-44">
+          <mxGeometry y="180" width="390" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-59" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;fontColor=#FF3333;" vertex="1" parent="sjk728Yho5nZLWCdos-K-44">
+          <mxGeometry y="240" width="390" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-56" value="+ userDetailsService:UserDetailsService&#xa;//Security中用于查询用户详细信息的接口" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-44">
+          <mxGeometry y="248" width="390" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-46" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-44">
+          <mxGeometry y="300" width="390" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-48" value="+ retrieveUser() //用于查询数据库用户信息" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-44">
+          <mxGeometry y="310" width="390" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-49" value="+  additionalAuthenticationChecks() //用作额外的身份验证检查" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-44">
+          <mxGeometry y="336" width="390" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-60" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;fontColor=#FF3333;" vertex="1" parent="sjk728Yho5nZLWCdos-K-44">
+          <mxGeometry y="362" width="390" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-53" value="说明：&#xa;继承自抽象类AbstractUserDetailsAuthenticationProvider，实现了&#xa;该类的方法 retrieveUser() 和 additionalAuthenticationChecks()。&#xa;这个Provider才是真正完成认证的类" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-44">
+          <mxGeometry y="370" width="390" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-50" value="实现" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="260" y="565" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-51" value="实现" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="960" y="851" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-52" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;fontColor=#FF3333;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="sjk728Yho5nZLWCdos-K-44" target="sjk728Yho5nZLWCdos-K-42">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="590" y="1041" as="sourcePoint" />
+            <mxPoint x="750" y="1041" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-61" value="" style="endArrow=classic;html=1;fontColor=#FF3333;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="781" as="sourcePoint" />
+            <mxPoint x="720" y="1685" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-62" value="这&lt;br&gt;&lt;br&gt;条&lt;br&gt;&lt;br&gt;线&lt;br&gt;&lt;br&gt;时&lt;br&gt;&lt;br&gt;框&lt;br&gt;&lt;br&gt;架&lt;br&gt;&lt;br&gt;默&lt;br&gt;&lt;br&gt;认&lt;br&gt;&lt;br&gt;的&lt;br&gt;&lt;br&gt;实&lt;br&gt;&lt;br&gt;现&lt;br&gt;&lt;br&gt;原&lt;br&gt;&lt;br&gt;理" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="660" y="871" width="10" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-63" value="XXXXAuthenticationToken" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="1580" y="300" width="250" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-64" value="+ authenticationType: UserType" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-63">
+          <mxGeometry y="26" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-71" value="+ username: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-63">
+          <mxGeometry y="52" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-72" value="+ userId: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-63">
+          <mxGeometry y="78" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-73" value="+ password: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-63">
+          <mxGeometry y="104" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-74" value="+ avatarUrl: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-63">
+          <mxGeometry y="130" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-65" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-63">
+          <mxGeometry y="156" width="250" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-66" value="说明：主要用于包装区别过滤条件。" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-63">
+          <mxGeometry y="164" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-67" value="AbstractAuthenticationToken" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="1605" y="170" width="200" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-69" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-67">
+          <mxGeometry y="26" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-79" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="492.5" y="637" width="947.5" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-80" value="CellphoneAuthenticationStrategy" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="1230" y="920" width="410" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-81" value="+ userRepository:UserRepository" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-80">
+          <mxGeometry y="26" width="410" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-102" value="+ jpaQueryFactory:JPAQueryFactory" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-80">
+          <mxGeometry y="52" width="410" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-82" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-80">
+          <mxGeometry y="78" width="410" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-83" value="+ authenticate(QiuSuoAuthenticationToken authentication): Authentication" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-80">
+          <mxGeometry y="86" width="410" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-84" value="CellphoneAuthenticationStrategy" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="1496" y="1060" width="418" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-103" value="+ userRepository:UserRepository" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-84">
+          <mxGeometry y="26" width="418" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-104" value="+ jpaQueryFactory:JPAQueryFactory" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-84">
+          <mxGeometry y="52" width="418" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-86" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-84">
+          <mxGeometry y="78" width="418" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-87" value="+ authenticate(QiuSuoAuthenticationToken authentication): Authentication" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-84">
+          <mxGeometry y="86" width="418" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-88" value="CellphoneAuthenticationStrategy" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="1800" y="920" width="410" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-107" value="+ jpaQueryFactory:JPAQueryFactory" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-88">
+          <mxGeometry y="26" width="410" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-106" value="+ userRepository:UserRepository" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-88">
+          <mxGeometry y="52" width="410" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-90" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-88">
+          <mxGeometry y="78" width="410" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-108" value="+ authenticate(QiuSuoAuthenticationToken authentication): Authentication" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-88">
+          <mxGeometry y="86" width="410" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-92" value="更多平台" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="2240" y="920" width="240" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-93" value="+ 更多属性: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-92">
+          <mxGeometry y="26" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-94" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-92">
+          <mxGeometry y="52" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-95" value="+ 更多方法: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="sjk728Yho5nZLWCdos-K-92">
+          <mxGeometry y="60" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-96" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;fontColor=#FF3333;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.242;exitY=1.058;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="sjk728Yho5nZLWCdos-K-27" target="sjk728Yho5nZLWCdos-K-80">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1300" y="870" as="sourcePoint" />
+            <mxPoint x="1460" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-97" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;fontColor=#FF3333;exitX=0.498;exitY=0.962;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="sjk728Yho5nZLWCdos-K-27" target="sjk728Yho5nZLWCdos-K-84">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1300" y="870" as="sourcePoint" />
+            <mxPoint x="1460" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-98" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;fontColor=#FF3333;" edge="1" parent="1" source="sjk728Yho5nZLWCdos-K-27" target="sjk728Yho5nZLWCdos-K-88">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1713.94" y="697.012" as="sourcePoint" />
+            <mxPoint x="1797" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-99" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;fontColor=#FF3333;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="sjk728Yho5nZLWCdos-K-27" target="sjk728Yho5nZLWCdos-K-92">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1731.7013888888887" y="698" as="sourcePoint" />
+            <mxPoint x="2029.7569444444443" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-100" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;fontColor=#FF3333;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1.038;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="sjk728Yho5nZLWCdos-K-24" target="sjk728Yho5nZLWCdos-K-66">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1340" y="390" as="sourcePoint" />
+            <mxPoint x="1500" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sjk728Yho5nZLWCdos-K-101" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;fontColor=#FF3333;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="sjk728Yho5nZLWCdos-K-63" target="sjk728Yho5nZLWCdos-K-67">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1355" y="390" as="sourcePoint" />
+            <mxPoint x="1515" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
