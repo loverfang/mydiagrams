@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-02-25T01:58:38.529Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" etag="YbxdZIMvis9Cz6rR9YHX" version="14.4.2" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-01T02:06:23.528Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" etag="4R9rxWrH4oRqlsYi-E1O" version="14.4.2" type="github">
   <diagram id="rRmc_TJHx7PVIxZmjCX5" name="Page-1">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -17,10 +17,67 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="TwkmxsGoG7HCM9egExcq-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="310" width="480" height="340" as="geometry" />
+          <mxGeometry x="60" y="310" width="480" height="330" as="geometry" />
         </mxCell>
-        <mxCell id="TwkmxsGoG7HCM9egExcq-5" value="&amp;nbsp;DynamicFieldUtil.formaterField(选择字段列表,扩展字段列表)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="130" y="320" width="380" height="20" as="geometry" />
+        <mxCell id="TwkmxsGoG7HCM9egExcq-5" value="&amp;nbsp;DynamicFieldUtil.formaterField(选择字段列表,扩展字段列表)方法" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="320" width="380" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TwkmxsGoG7HCM9egExcq-6" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="TwkmxsGoG7HCM9egExcq-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="290" as="sourcePoint" />
+            <mxPoint x="200" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TwkmxsGoG7HCM9egExcq-7" value="将模型中的默认固定选中字段的Json字符串转换成对象列表。" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="120" y="360" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TwkmxsGoG7HCM9egExcq-8" value="将模型中的扩展字段的Json字符串转换成对象列表。" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="130" y="450" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TwkmxsGoG7HCM9egExcq-9" value="将扩展字段拼装成统一的CmsDefaultModelFieldDto对象列表" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="120" y="540" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TwkmxsGoG7HCM9egExcq-10" value="返回模型对应的字段到页面上进行发表内容表单的渲染。" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="110" y="730" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TwkmxsGoG7HCM9egExcq-11" value="" style="endArrow=classic;html=1;exitX=0.29;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="TwkmxsGoG7HCM9egExcq-4" target="TwkmxsGoG7HCM9egExcq-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="690" as="sourcePoint" />
+            <mxPoint x="203" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TwkmxsGoG7HCM9egExcq-12" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="TwkmxsGoG7HCM9egExcq-7" target="TwkmxsGoG7HCM9egExcq-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="440" as="sourcePoint" />
+            <mxPoint x="240" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TwkmxsGoG7HCM9egExcq-13" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="TwkmxsGoG7HCM9egExcq-8" target="TwkmxsGoG7HCM9egExcq-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="550" as="sourcePoint" />
+            <mxPoint x="260" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TwkmxsGoG7HCM9egExcq-14" value="内容ID" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="120" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TwkmxsGoG7HCM9egExcq-15" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1090" y="100" as="sourcePoint" />
+            <mxPoint x="1090" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TwkmxsGoG7HCM9egExcq-16" value="根据内容调用getInfoByPk()方法" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="180" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TwkmxsGoG7HCM9egExcq-17" value="查询&lt;br&gt;&lt;span&gt;thinkcms_content，&lt;/span&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;sys_resource，&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;thinkcms_content_attribute，&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;thinkcms_model，&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;thinkcms_category，&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;thinkcms_tag&lt;/div&gt;&lt;div&gt;表将contentID对应的内容全部查出来&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="910" y="290" width="400" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="TwkmxsGoG7HCM9egExcq-18" value="如果查到了内容进行如下处理：&lt;br&gt;1、根据模型的选中字段，扩展字段信息，构建页面表单需要的字段列表&lt;br&gt;2、设置内容的附件信息&lt;br&gt;3、设置内容的tag信息&lt;br&gt;4、调用&amp;nbsp;DynamicFieldUtil.setContentValByFiled(allFields, contentDto, sysResourceService);方法为内容的字段赋值形成" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="865" y="560" width="490" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="TwkmxsGoG7HCM9egExcq-19" value="&lt;span style=&quot;text-align: left&quot;&gt;thinkcms_content_attribute，表中的data字段存放的是扩展属性表中的内容，作为内容传递！！&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="290" width="260" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
